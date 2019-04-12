@@ -92,7 +92,7 @@ namespace DIU
             try
             {
 
-                string query = "select * from crudtable where sid = "+sid;
+                string query = "select * from crudtable where sid = "+sid.ToString();
 
 
                 cmd = new MySqlCommand(query, connection);
@@ -125,11 +125,6 @@ namespace DIU
                 cmd.Dispose();
                 connection.Close();
             }
-        }
-
-        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-            retrive();
         }
         
 
@@ -343,6 +338,18 @@ namespace DIU
                 MessageBox.Show("Could not delete! Student ID was empty!");
             }
             
+        }
+
+        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
+
+                sid_tb.Text = row.Cells["sid"].Value.ToString();
+                name_tb.Text = row.Cells["name"].Value.ToString();
+                email_tb.Text = row.Cells["email"].Value.ToString();
+            }
         }
     }
 }
