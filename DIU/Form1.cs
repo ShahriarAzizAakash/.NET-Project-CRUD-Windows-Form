@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data;
 using MySql.Data.MySqlClient;
 
 namespace DIU
@@ -43,10 +42,9 @@ namespace DIU
 
         }
 
-        private void greet_btn_Click(object sender, EventArgs e)
+        private void search_btn_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("Hello");
-            MessageBox.Show("Hello " + name_tb.Text);
+            retrive(sid_tb.Text);
         }
 
         public void retrive()
@@ -85,6 +83,50 @@ namespace DIU
                 connection.Close();
             }
         }
+
+        public void retrive(string sid)
+        {
+            connection.ConnectionString = connectionString;
+            cmd = connection.CreateCommand();
+
+            try
+            {
+
+                string query = "select * from crudtable where sid = "+sid;
+
+
+                cmd = new MySqlCommand(query, connection);
+                connection.Open();
+                MySqlDataReader dataReader = cmd.ExecuteReader();
+
+                if (dataReader.Read())
+                {
+                    name_tb.Text = dataReader[1].ToString();
+                    email_tb.Text = dataReader[2].ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Cannot find the record...", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+                dataReader.Close();
+                connection.Close();
+
+
+            }
+            catch (Exception e1)
+            {
+                string msg = e1.Message.ToString();
+                string caption = "Error";
+                MessageBox.Show(msg, caption, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                cmd.Dispose();
+                connection.Close();
+            }
+        }
+
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
             retrive();
@@ -149,7 +191,7 @@ namespace DIU
             try
             {
 
-                string query = "UPDATE crudtable SET \"name\" = '"+name_tb.Text+"' WHERE \"sid\" = "+sid_tb.Text;
+                string query = "UPDATE crudtable SET name = '"+name_tb.Text+"' WHERE sid = "+sid_tb.Text;
 
 
                 cmd.CommandText = query;
@@ -180,7 +222,7 @@ namespace DIU
             try
             {
 
-                string query = "UPDATE crudtable SET \"email\" = '" + email_tb.Text + "' WHERE \"sid\" = " + sid_tb.Text;
+                string query = "UPDATE crudtable SET email = '" + email_tb.Text + "' WHERE sid = " + sid_tb.Text;
                 
                 cmd.CommandText = query;
                 connection.Open();

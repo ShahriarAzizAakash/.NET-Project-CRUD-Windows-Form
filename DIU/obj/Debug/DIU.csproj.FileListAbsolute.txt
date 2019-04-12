@@ -22,3 +22,17 @@ C:\Users\aakas\Desktop\NET Project-20190410T134608Z-001\.NET Project\DIU\bin\Deb
 C:\Users\aakas\Desktop\NET Project-20190410T134608Z-001\.NET Project\DIU\bin\Debug\Google.Protobuf.dll
 C:\Users\aakas\Desktop\NET Project-20190410T134608Z-001\.NET Project\DIU\bin\Debug\MySql.Data.xml
 C:\Users\aakas\Desktop\NET Project-20190410T134608Z-001\.NET Project\DIU\obj\Debug\DIU.csproj.CopyComplete
+C:\Users\aakas\Desktop\NET Project-20190410T134608Z-001\.NET Project\.NET-Project-CRUD-Windows-Form\DIU\bin\Debug\DIU.exe.config
+C:\Users\aakas\Desktop\NET Project-20190410T134608Z-001\.NET Project\.NET-Project-CRUD-Windows-Form\DIU\bin\Debug\DIU.exe
+C:\Users\aakas\Desktop\NET Project-20190410T134608Z-001\.NET Project\.NET-Project-CRUD-Windows-Form\DIU\bin\Debug\DIU.pdb
+C:\Users\aakas\Desktop\NET Project-20190410T134608Z-001\.NET Project\.NET-Project-CRUD-Windows-Form\DIU\bin\Debug\MySql.Data.dll
+C:\Users\aakas\Desktop\NET Project-20190410T134608Z-001\.NET Project\.NET-Project-CRUD-Windows-Form\DIU\bin\Debug\Google.Protobuf.dll
+C:\Users\aakas\Desktop\NET Project-20190410T134608Z-001\.NET Project\.NET-Project-CRUD-Windows-Form\DIU\bin\Debug\MySql.Data.xml
+C:\Users\aakas\Desktop\NET Project-20190410T134608Z-001\.NET Project\.NET-Project-CRUD-Windows-Form\DIU\obj\Debug\DIU.csprojAssemblyReference.cache
+C:\Users\aakas\Desktop\NET Project-20190410T134608Z-001\.NET Project\.NET-Project-CRUD-Windows-Form\DIU\obj\Debug\DIU.Form1.resources
+C:\Users\aakas\Desktop\NET Project-20190410T134608Z-001\.NET Project\.NET-Project-CRUD-Windows-Form\DIU\obj\Debug\DIU.Properties.Resources.resources
+C:\Users\aakas\Desktop\NET Project-20190410T134608Z-001\.NET Project\.NET-Project-CRUD-Windows-Form\DIU\obj\Debug\DIU.csproj.GenerateResource.cache
+C:\Users\aakas\Desktop\NET Project-20190410T134608Z-001\.NET Project\.NET-Project-CRUD-Windows-Form\DIU\obj\Debug\DIU.csproj.CoreCompileInputs.cache
+C:\Users\aakas\Desktop\NET Project-20190410T134608Z-001\.NET Project\.NET-Project-CRUD-Windows-Form\DIU\obj\Debug\DIU.csproj.CopyComplete
+C:\Users\aakas\Desktop\NET Project-20190410T134608Z-001\.NET Project\.NET-Project-CRUD-Windows-Form\DIU\obj\Debug\DIU.exe
+C:\Users\aakas\Desktop\NET Project-20190410T134608Z-001\.NET Project\.NET-Project-CRUD-Windows-Form\DIU\obj\Debug\DIU.pdb
